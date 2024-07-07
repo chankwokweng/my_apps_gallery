@@ -45,9 +45,8 @@ class _MyAppCardState extends State<MyAppCard> {
                       _expandIntro = !_expandIntro;  // toggle expand
                     });},
                     child: 
-                    // Text (widget.appIntro)
-                      _expandIntro? SingleChildScrollView(child: Text (widget.appIntro, style: mySmallTextStyle))
-                              : Text (overflow: TextOverflow.ellipsis , widget.appIntro, style: mySmallTextStyle,)
+                      _expandIntro? Text (widget.appIntro, style: mySmallTextStyle)
+                              : Text (maxLines: 2, overflow: TextOverflow.ellipsis , widget.appIntro, style: mySmallTextStyle,)
                 ),
               ),
 
@@ -62,9 +61,8 @@ class _MyAppCardState extends State<MyAppCard> {
                     _expandDesc = !_expandDesc;  // toggle expand
                   });},
                   child: 
-                  // Text (widget.appDescription)
                     _expandDesc? Text (widget.appDescription, style: myBodyTextStyle)
-                            : Text (overflow: TextOverflow.ellipsis , widget.appDescription, )
+                            : Text (maxLines: 2, overflow: TextOverflow.ellipsis , widget.appDescription, style: myBodyTextStyle )
                             ),
               ),
           ]),

@@ -20,7 +20,7 @@ deploy-web:
 	flutter pub get
 
 	@echo 'cleanup ...'
-	flutter build web --base-href $(BASE_HREF) --web-renderer html --release    
+	flutter build web --base-href $(BASE_HREF) --web-renderer canvaskit --release    
 
 	@echo 'deploy ...'
 	cd build\web && git init && git add . && git commit -m "Deploy $(BUILD_VERSION)" && git remote add origin $(GITHUB_REPO) &&	git branch -M main && git push -u --force origin main     
