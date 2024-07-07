@@ -48,22 +48,22 @@ const TextStyle myHeaderTextStyle = TextStyle(
                                         fontWeight: FontWeight.bold);
 
 const TextStyle mySubHeaderTextStyle = TextStyle(
-                                        color:Color.fromARGB(249, 203, 203, 202),
+                                        color:Color.fromARGB(248, 78, 5, 5),
                                         fontSize: 12,
                                         fontWeight: FontWeight.normal);
 
 const TextStyle mySmallTextStyle = TextStyle(
-                                        color:Color.fromARGB(249, 203, 203, 202),
+                                        color:Color.fromARGB(248, 3, 26, 11),
                                         fontSize: 10,
                                         fontWeight: FontWeight.normal);
 
 
-const Color myBookingBoxColor = Color.fromARGB(248, 177, 61, 12);
-const TextStyle myBookingTextStyle = TextStyle(
-                                        color:Color.fromARGB(173, 167, 210, 59),
-                                        fontSize: 18,
+const Color myBoxColor = Color.fromARGB(248, 177, 61, 12);
+const TextStyle myBodyTextStyle = TextStyle(
+                                        color:Color.fromARGB(172, 59, 62, 210),
+                                        fontSize: 12,
                                         fontWeight: FontWeight.bold);
-const TextStyle myBookingServiceTextStyle = TextStyle(
+const TextStyle myServiceTextStyle = TextStyle(
                                         color:Color.fromARGB(249, 203, 203, 202),
                                         fontSize: 26,
                                         fontWeight: FontWeight.bold);
